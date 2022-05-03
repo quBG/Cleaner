@@ -4,6 +4,6 @@ module com.cleaner.main.cleaner {
 
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.cleaner to javafx.fxml;
-    exports com.cleaner;
+    opens com.application to javafx.fxml;
+    exports com.application;
 }

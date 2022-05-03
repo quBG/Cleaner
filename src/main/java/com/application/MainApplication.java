@@ -1,4 +1,4 @@
-package com.cleaner;
+package com.application;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +14,7 @@ public class MainApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("MainApplication.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setMinHeight(450);
         stage.setMinWidth(700);

@@ -1,4 +1,4 @@
-package com.cleaner;
+package com.application;
 
 public class MainController {
 
