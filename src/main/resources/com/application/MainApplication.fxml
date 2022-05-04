@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.Button?>
 
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.application.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
-</VBox>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="485.0" prefWidth="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="44.0" prefHeight="555.0" prefWidth="194.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="0.0" />
+            <VBox prefHeight="541.0" prefWidth="47.0" spacing="26.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/Icons/FileCleaner.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="47.0" fitWidth="57.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" rotate="35.5">
+                     <image>
+                        <Image url="@../../pictures/Icons/Busting.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="-2.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" rotate="93.1">
+                     <image>
+                        <Image url="@../../pictures/Icons/Settings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="140.0" layoutX="14.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/Icons/SettingsPC.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="38.0" fitWidth="140.0" layoutX="14.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/Icons/InformationAboutPC.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="4.0" top="62.0" />
+               </padding></VBox>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
