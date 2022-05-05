@@ -1,48 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="485.0" prefWidth="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <VBox layoutX="44.0" prefHeight="555.0" prefWidth="194.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="0.0" />
-            <VBox prefHeight="541.0" prefWidth="47.0" spacing="26.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox alignment="TOP_CENTER" layoutX="44.0" prefHeight="555.0" prefWidth="206.0" spacing="26.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <ImageView fitHeight="45.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #154994;" text="Clear Files" textAlignment="CENTER" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="-10.0" />
+                     </padding></Button>
+                  <Button layoutX="35.0" layoutY="72.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="188.0" style="-fx-background-color: #154994;" text="Clear Memory" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="-10.0" />
+                     </padding>
+                  </Button>
+                  <Button layoutX="35.0" layoutY="108.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="182.0" style="-fx-background-color: #154994;" text="Program Settings" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="-17.0" />
+                     </padding>
+                  </Button>
+                  <Button layoutX="35.0" layoutY="144.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="186.0" style="-fx-background-color: #154994;" text="System Settings" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="-23.0" />
+                     </padding>
+                  </Button>
+                  <Button layoutX="35.0" layoutY="144.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="186.0" style="-fx-background-color: #154994;" text="System Info" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="-35.0" />
+                     </padding>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets top="108.0" />
+               </padding></VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="555.0" prefWidth="46.0" spacing="26.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../pictures/Icons/FileCleaner.png" />
                      </image>
+                     <VBox.margin>
+                        <Insets bottom="-6.0" />
+                     </VBox.margin>
                   </ImageView>
                   <ImageView fitHeight="47.0" fitWidth="57.0" layoutX="14.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" rotate="35.5">
                      <image>
                         <Image url="@../../pictures/Icons/Busting.png" />
                      </image>
                      <VBox.margin>
-                        <Insets left="-2.0" />
+                        <Insets bottom="-3.0" left="-4.0" />
                      </VBox.margin>
                   </ImageView>
                   <ImageView fitHeight="42.0" fitWidth="44.0" layoutX="14.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" rotate="93.1">
                      <image>
                         <Image url="@../../pictures/Icons/Settings.png" />
                      </image>
+                     <VBox.margin>
+                        <Insets left="-8.0" />
+                     </VBox.margin>
                   </ImageView>
                   <ImageView fitHeight="38.0" fitWidth="140.0" layoutX="14.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../pictures/Icons/SettingsPC.png" />
                      </image>
+                     <VBox.margin>
+                        <Insets left="-8.0" />
+                     </VBox.margin>
                   </ImageView>
-                  <ImageView fitHeight="38.0" fitWidth="140.0" layoutX="14.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="14.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../pictures/Icons/InformationAboutPC.png" />
                      </image>
+                     <VBox.margin>
+                        <Insets left="-8.0" top="5.0" />
+                     </VBox.margin>
                   </ImageView>
                </children>
                <padding>
-                  <Insets left="10.0" right="4.0" top="62.0" />
+                  <Insets left="10.0" right="4.0" top="108.0" />
                </padding></VBox>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="83.0" prefWidth="250.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="94.0" prefWidth="250.0">
+               <children>
+                  <ImageView fitHeight="47.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/Icons/Logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="-4.0" left="-40.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
          </children></AnchorPane>
    </children>
 </AnchorPane>
