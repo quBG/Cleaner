@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane fx:controller="com.application.FXMLDezignController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.FXMLDezignController">
    <children>
       <AnchorPane prefHeight="485.0" prefWidth="176.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <VBox fx:id="containerButtons" alignment="TOP_CENTER" layoutX="44.0" prefHeight="555.0" prefWidth="206.0" spacing="26.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="0.0">
                <children>
-                  <Button onAction="#Start" mnemonicParsing="false" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #154994;" text="Clear Files" textAlignment="CENTER" textFill="WHITE">
+                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="192.0" style="-fx-background-color: #154994;" text="Clear Files" textAlignment="CENTER" textFill="WHITE">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>

@@ -19,22 +19,14 @@ public class FXMLDezignController {
     private List<Button> selectingModes = new ArrayList<>();
     private List<ImageView> modePictures = new ArrayList<>();
 
-    public void Start(ActionEvent actionEvent) {
+    @FXML
+    public void initialize() {
         VboxToList(containerButtons, selectingModes);
         VboxToList(containerPictures, modePictures);
-
-        for (ImageView ass : modePictures) {
-            System.out.println(ass.getX());
-        }
     }
 
     private <T> void VboxToList(VBox container, List<T> list) {
-        try {
             for (Node element : container.getChildren().stream().toList())
                 list.add((T)element);
-        }catch (Exception e) {
-            System.out.println(e);
-        }
-
     }
 }
