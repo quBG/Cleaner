@@ -23,6 +23,8 @@ public class FXMLDezignController {
     public void initialize() {
         VboxToList(containerButtons, selectingModes);
         VboxToList(containerPictures, modePictures);
+
+        containerButtons.getOnMouseClicked();
     }
 
     private <T> void VboxToList(VBox container, List<T> list) {
