@@ -28,6 +28,5 @@ public class FXMLDezignController {
     }
 
     public void SetPage(ActionEvent actionEvent) {
-
     }
 }
