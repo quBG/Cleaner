@@ -2,10 +2,14 @@ package com.application;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+
+import java.io.IOException;
+import java.net.URL;
 import java.util.*;
 
 public class FXMLDezignController {
@@ -27,6 +31,18 @@ public class FXMLDezignController {
                 list.add((T)element);
     }
 
-    public void SetPage(ActionEvent actionEvent) {
+    public void SetPage(ActionEvent e) {
+        String view = (String) ((Node)e.getSource()).getUserData();
+        loadFXML(getClass().getResource(view));
+    }
+
+    private void loadFXML(URL url) {
+        try {
+            FXMLLoader loader = new FXMLLoader(url);
+            borderPane.setCenter(loader.load());
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
