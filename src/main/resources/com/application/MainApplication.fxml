@@ -15,7 +15,7 @@
                   <Insets top="108.0" />
                </padding>
                <children>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE" userData="">
+                  <Button userData="src/main/resources/com/application/WorkPages/CleaningFiles.fxml" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
