@@ -26,23 +26,19 @@ public class FXMLDezignController {
         VboxToList(containerButtons, modeSelections);
     }
 
+    public void SetPage(ActionEvent e) {
+        try{
+            String view = (String) ((Node)e.getSource()).getUserData();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(view));
+            borderPane.setCenter(loader.load());
+        }catch (Exception exception){
+            System.out.println("____________________________________________________" + exception);
+        }
+
+    }
+
     private <T> void VboxToList(VBox container, List<T> list) {
             for (Node element : container.getChildren().stream().toList())
                 list.add((T)element);
-    }
-
-    public void SetPage(ActionEvent e) {
-        String view = (String) ((Node)e.getSource()).getUserData();
-        loadFXML(getClass().getResource(view));
-    }
-
-    private void loadFXML(URL url) {
-        try {
-            FXMLLoader loader = new FXMLLoader(url);
-            borderPane.setCenter(loader.load());
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

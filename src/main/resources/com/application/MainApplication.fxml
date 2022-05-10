@@ -15,7 +15,7 @@
                   <Insets top="108.0" />
                </padding>
                <children>
-                  <Button userData="src/main/resources/com/application/WorkPages/CleaningFiles.fxml" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE">
+                  <Button userData="../CleaningFiles.fxml" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -29,7 +29,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Clearing Memory" textFill="WHITE">
+                  <Button userData="CleaningFiles.fxml" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Clearing Memory" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -43,7 +43,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="191.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Computer Settings" textFill="WHITE">
+                  <Button userData="CleaningFiles.fxml" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="191.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Computer Settings" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -57,7 +57,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Program Settings" textFill="WHITE">
+                  <Button userData="CleaningFiles.fxml" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Program Settings" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -71,7 +71,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
+                  <Button userData="CleaningFiles.fxml" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
