@@ -6,9 +6,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.text.Text?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.application.pages.CleaningFiles"
             prefHeight="400.0" prefWidth="600.0">
+    <Text text="10110923480923184"/>
 
 </AnchorPane>
