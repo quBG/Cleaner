@@ -26,7 +26,7 @@ public class FXMLDezignController {
     public void SetPage(ActionEvent e) {
         try{
             String view = (String) ((Node)e.getSource()).getUserData();
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("WorkPages/" + view));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(view));
             borderPane.setCenter(loader.load());
         }catch (Exception exception){
             System.out.println(exception);
