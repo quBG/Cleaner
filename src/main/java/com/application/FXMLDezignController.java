@@ -31,7 +31,6 @@ public class FXMLDezignController {
         }catch (Exception exception){
             System.out.println(exception);
         }
-
     }
 
     private <T> void VboxToList(VBox container, List<T> list) {
