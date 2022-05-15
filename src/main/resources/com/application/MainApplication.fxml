@@ -15,7 +15,7 @@
                   <Insets top="108.0" />
                </padding>
                <children>
-                  <Button userData="WorkPages/CleaningFiles.fxml" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE" userData="WorkPages/CleaningFiles.fxml">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -29,7 +29,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button userData="WorkPages/ClearingMemory.fxml" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Clearing Memory" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Clearing Memory" textFill="WHITE" userData="WorkPages/ClearingMemory.fxml">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -43,7 +43,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button userData="WorkPages/ComputerInformation.fxml" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="191.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Computer Settings" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="191.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Computer Settings" textFill="WHITE" userData="WorkPages/ComputerInformation.fxml">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -57,7 +57,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button userData="WorkPages/ComputerSettings.fxml" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Program Settings" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Program Settings" textFill="WHITE" userData="WorkPages/ComputerSettings.fxml">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -71,7 +71,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button userData="WorkPages/ProgramSettings.fxml" alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE" userData="WorkPages/ProgramSettings.fxml">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -102,6 +102,6 @@
                </children>
             </VBox>
          </children></AnchorPane>
-      <BorderPane fx:id="borderPane" layoutX="247.0" layoutY="-3.0" prefHeight="563.0" prefWidth="598.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0"/>
+      <BorderPane fx:id="borderPane" layoutX="247.0" layoutY="-3.0" prefHeight="563.0" prefWidth="598.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0" />
    </children>
 </AnchorPane>
