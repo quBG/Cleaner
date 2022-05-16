@@ -1,5 +1,6 @@
 package com.application;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.effect.Bloom;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+
 import java.net.URL;
 import java.util.*;
 
@@ -21,7 +23,7 @@ public class FXMLDezignController {
     private List<Button> modeSelections = new ArrayList<>();
 
     @FXML
-    public void initialize() {
+    private void initialize() {
         VboxToList(containerButtons, modeSelections);
     }
 
@@ -43,16 +45,21 @@ public class FXMLDezignController {
     }
 
     private void ButtonBacklight(Button button){
-        ButtonClening();
-        button.setEffect(new Bloom());
+        ClearButtonsEffects();
+        button.setEffect(new Bloom(0.9f));
     }
 
-    private void ButtonClening(){
+    private void ClearButtonsEffects(){
         for (Button button : modeSelections) {
             button.setEffect(null);
         }
     }
 
+    public void CloseProgram(ActionEvent e){
+        System.out.println("__________________________________");
+        Platform.exit();
+        System.exit(0);
+    }
 
     private <T> void VboxToList(VBox container, List<T> list) {
             for (Node element : container.getChildren().stream().toList())

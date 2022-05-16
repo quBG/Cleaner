@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.FXMLDezignController">
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.application.FXMLDezignController">
    <children>
-      <AnchorPane prefHeight="555.0" prefWidth="61.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="565.0" prefWidth="237.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <VBox fx:id="containerButtons" layoutX="-6.0" prefHeight="555.0" prefWidth="256.0" spacing="19.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="0.0">
                <padding>
-                  <Insets top="108.0" />
+                  <Insets left="7.0" top="120.0" />
                </padding>
                <children>
                   <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#SetPage" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE" userData="WorkPages/CleaningFiles.fxml">
@@ -89,9 +89,9 @@
          </children></AnchorPane>
       <AnchorPane prefHeight="83.0" prefWidth="250.0">
          <children>
-            <VBox alignment="CENTER" prefHeight="94.0" prefWidth="217.0">
+            <VBox alignment="CENTER" prefHeight="107.0" prefWidth="250.0">
                <children>
-                  <ImageView fitHeight="47.0" fitWidth="174.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="54.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
                      <image>
                         <Image url="@../../pictures/Icons/Logo.png" />
                      </image>
@@ -102,6 +102,28 @@
                </children>
             </VBox>
          </children></AnchorPane>
+      <AnchorPane layoutX="247.0" prefHeight="26.0" prefWidth="578.0" translateX="-3.0" translateY="3.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#CloseProgram" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" textAlignment="CENTER" translateX="542.0" translateY="-3.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/Icons/Exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="500.0" layoutY="-3.0" mnemonicParsing="false" onAction="#CloseProgram" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../pictures/Icons/Clouse.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
       <BorderPane fx:id="borderPane" layoutX="247.0" layoutY="-3.0" prefHeight="563.0" prefWidth="598.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0" />
    </children>
 </AnchorPane>
