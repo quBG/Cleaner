@@ -104,7 +104,7 @@
          </children></AnchorPane>
       <AnchorPane layoutX="247.0" prefHeight="26.0" prefWidth="578.0" translateX="-3.0" translateY="3.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#CloseProgram" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" textAlignment="CENTER" translateX="542.0" translateY="-3.0">
+            <Button onAction="#CloseProgram" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" textAlignment="CENTER" translateX="542.0" translateY="-3.0">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -113,7 +113,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button layoutX="500.0" layoutY="-3.0" mnemonicParsing="false" onAction="#CloseProgram" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
+            <Button onAction="#CloseProgram" layoutX="500.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fitHeight="26.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -124,6 +124,6 @@
             </Button>
          </children>
       </AnchorPane>
-      <BorderPane fx:id="borderPane" layoutX="247.0" layoutY="-3.0" prefHeight="563.0" prefWidth="598.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0" />
+      <BorderPane fx:id="borderPane" layoutX="247.0" layoutY="32.0" prefHeight="538.0" prefWidth="578.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
    </children>
 </AnchorPane>

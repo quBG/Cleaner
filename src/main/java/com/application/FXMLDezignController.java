@@ -9,12 +9,12 @@ import javafx.scene.control.Button;
 import javafx.scene.effect.Bloom;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.*;
 
 public class FXMLDezignController {
-
     @FXML
     private VBox containerButtons;
     @FXML
@@ -25,6 +25,7 @@ public class FXMLDezignController {
     @FXML
     private void initialize() {
         VboxToList(containerButtons, modeSelections);
+
     }
 
     public void SetPage(ActionEvent e) {
@@ -55,8 +56,11 @@ public class FXMLDezignController {
         }
     }
 
+    public void HideProgram(){
+
+    }
+
     public void CloseProgram(ActionEvent e){
-        System.out.println("__________________________________");
         Platform.exit();
         System.exit(0);
     }
