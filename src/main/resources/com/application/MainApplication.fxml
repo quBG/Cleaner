@@ -102,22 +102,13 @@
                </children>
             </VBox>
          </children></AnchorPane>
-      <AnchorPane layoutX="247.0" prefHeight="26.0" prefWidth="578.0" translateX="-3.0" translateY="3.0">
+      <AnchorPane layoutX="250.0" layoutY="-4.0" prefHeight="12.0" prefWidth="578.0" translateX="-3.0" translateY="3.0">
          <children>
-            <Button onAction="#CloseProgram" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" textAlignment="CENTER" translateX="542.0" translateY="-3.0">
+            <Button layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onAction="#CloseProgram" prefHeight="28.0" prefWidth="35.0" style="-fx-background-color: transparent;" textAlignment="CENTER" translateX="534.0" translateY="1.0">
                <graphic>
-                  <ImageView fitHeight="26.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../pictures/Icons/Exit.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button onAction="#CloseProgram" layoutX="500.0" layoutY="-3.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: transparent;" textAlignment="CENTER">
-               <graphic>
-                  <ImageView fitHeight="26.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../pictures/Icons/Clouse.png" />
                      </image>
                   </ImageView>
                </graphic>

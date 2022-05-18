@@ -22,7 +22,6 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainApplication.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         WindowDragging(scene, stage);
-
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setHeight(565);
         stage.setWidth(825);
