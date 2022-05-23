@@ -13,7 +13,7 @@ import javafx.scene.layout.VBox;
 import java.net.URL;
 import java.util.*;
 
-public class FXMLDezignController {
+public class MainApplicationController {
     @FXML
     private VBox containerButtons;
     @FXML
