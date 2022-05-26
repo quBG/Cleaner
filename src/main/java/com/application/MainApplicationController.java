@@ -22,43 +22,53 @@ public class MainApplicationController {
 
     @FXML
     private void initialize() {
-        VboxToList(containerButtons, modeSelections);
+        vboxToList(containerButtons, modeSelections);
     }
 
-    public void SetPage(ActionEvent e) {
+    public void setPage(ActionEvent e) {
         String view = (String) ((Node) e.getSource()).getUserData();
         loadFXML(getClass().getResource(view));
         Button button = (Button) e.getSource();
-        ButtonBacklight(button);
+        buttonBacklight(button);
     }
 
     private void loadFXML(URL path){
         try {
             FXMLLoader loader = new FXMLLoader(path);
             borderPane.setCenter(loader.load());
+            String controllerPath = borderPane.getCenter().getUserData().toString();
+            loadingSubController(getClass().getResource(controllerPath));
         }
         catch (Exception e) {
             System.out.println(e);
         }
     }
 
-    private void ButtonBacklight(Button button){
-        ClearButtonsEffects();
+    private void loadingSubController(URL path){
+        //needs to be improved
+        //needs to be improved
+        //needs to be improved
+        //needs to be improved
+        //needs to be improved
+        //needs to be improved
+    }
+
+    private void buttonBacklight(Button button){
+        clearButtonsEffects();
         button.setEffect(new Bloom(0.9f));
     }
 
-    private void ClearButtonsEffects(){
-        for (Button button : modeSelections) {
+    private void clearButtonsEffects(){
+        for (Button button : modeSelections)
             button.setEffect(null);
-        }
     }
 
-    public void CloseProgram(ActionEvent e){
+    public void closeProgram(ActionEvent e){
         Platform.exit();
         System.exit(0);
     }
 
-    private <T> void VboxToList(VBox container, List<T> list) {
+    private <T> void vboxToList(VBox container, List<T> list) {
             for (Node element : container.getChildren().stream().toList())
                 list.add((T)element);
     }
