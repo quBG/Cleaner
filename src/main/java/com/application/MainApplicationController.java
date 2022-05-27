@@ -1,5 +1,6 @@
 package com.application;
 
+import com.application.pages.Page;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -37,20 +38,27 @@ public class MainApplicationController {
             FXMLLoader loader = new FXMLLoader(path);
             borderPane.setCenter(loader.load());
             String controllerPath = borderPane.getCenter().getUserData().toString();
-            loadingSubController(getClass().getResource(controllerPath));
+            loadingSubController(controllerPath);
         }
         catch (Exception e) {
             System.out.println(e);
         }
     }
 
-    private void loadingSubController(URL path){
-        //needs to be improved
-        //needs to be improved
-        //needs to be improved
-        //needs to be improved
-        //needs to be improved
-        //needs to be improved
+    private void loadingSubController(String path){
+        try {
+            Object temp = Class.forName(path);
+            if (temp instanceof Page){
+                /////
+                /////
+                /////
+                /////
+                /////
+            }
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
     }
 
     private void buttonBacklight(Button button){

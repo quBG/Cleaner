@@ -1,4 +1,9 @@
 package com.application.pages;
 
-public class ComputerInformation {
+public class ComputerInformation extends Page {
+
+    @Override
+    public void use() {
+
+    }
 }
