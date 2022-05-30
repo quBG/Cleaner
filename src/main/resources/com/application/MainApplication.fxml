@@ -115,6 +115,6 @@
             </Button>
          </children>
       </AnchorPane>
-      <BorderPane fx:id="borderPane" layoutX="247.0" layoutY="32.0" prefHeight="538.0" prefWidth="578.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+      <BorderPane userData="1234512354353" fx:id="workspace" layoutX="247.0" layoutY="32.0" prefHeight="538.0" prefWidth="578.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
    </children>
 </AnchorPane>

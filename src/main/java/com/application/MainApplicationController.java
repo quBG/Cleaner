@@ -16,13 +16,14 @@ public class MainApplicationController {
     @FXML
     private VBox containerButtons;
     @FXML
-    private BorderPane borderPane;
-    private PageController pageController = new PageController(borderPane);
+    private BorderPane workspace;
+    private PageController pageController = new PageController();
     private List<Button> modeSelections = new ArrayList<>();
 
     @FXML
     private void initialize() {
         vboxToList(containerButtons, modeSelections);
+        pageController.setWorkspace(workspace);
     }
 
     private void setPage(ActionEvent e) {

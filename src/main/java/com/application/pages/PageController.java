@@ -1,33 +1,28 @@
 package com.application.pages;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.BorderPane;
 
 import java.net.URL;
 
 public class PageController {
-    private BorderPane borderPane;
-
-    public PageController(BorderPane pane){
-        borderPane = pane;
-    }
+    private BorderPane workspace;
 
     private void loadPage(URL path){
         try {
             FXMLLoader loader = new FXMLLoader(path);
-            borderPane.setCenter(loader.load());
+            workspace.setCenter(loader.load());
         }
         catch (Exception e) {
             System.out.println(e);
         }
     }
 
-    public void programSettings() {
-
+    public void cleaningFiles() {
+        loadPage(getClass().getResource("/com/application/WorkPages/CleaningFiles.fxml"));
     }
 
-    public void computerSettings() {
+    public void clearingMemory() {
 
     }
 
@@ -35,11 +30,15 @@ public class PageController {
 
     }
 
-    public void clearingMemory() {
+    public void computerSettings() {
 
     }
 
-    public void cleaningFiles() {
+    public void programSettings() {
 
+    }
+
+    public void setWorkspace(BorderPane workspace) {
+        this.workspace = workspace;
     }
 }
