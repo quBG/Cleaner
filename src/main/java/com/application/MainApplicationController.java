@@ -1,5 +1,7 @@
 package com.application;
 
+import com.application.Tools.ButtonTools;
+import com.application.Tools.Converter;
 import com.application.pages.PageController;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -22,57 +24,32 @@ public class MainApplicationController {
 
     @FXML
     private void initialize() {
-        vboxToList(containerButtons, modeSelections);
-        pageController.setWorkspace(workspace);
+        Converter.vboxToList(containerButtons, modeSelections);
+        pageController.setWorkspace(workspace, modeSelections);
     }
 
-    private void setPage(ActionEvent e) {
-        Button button = (Button) e.getSource();
-        buttonBacklight(button);
+    public void cleaningFiles(ActionEvent event) {
+        pageController.loadPage(getClass().getResource("/com/application/WorkPages/CleaningFiles.fxml"), event);
+    }
+
+    public void clearingMemory(ActionEvent event) {
+        pageController.loadPage(getClass().getResource("/com/application/WorkPages/ClearingMemory.fxml"), event);
+    }
+
+    public void computerInformation(ActionEvent event) {
+        pageController.loadPage(getClass().getResource("/com/application/WorkPages/ComputerInformation.fxml"), event);
+    }
+
+    public void computerSettings(ActionEvent event) {
+        pageController.loadPage(getClass().getResource("/com/application/WorkPages/ComputerSettings.fxml"), event);
+    }
+
+    public void programSettings(ActionEvent event) {
+        pageController.loadPage(getClass().getResource("/com/application/WorkPages/ProgramSettings.fxml"), event);
     }
 
     public void closeProgram(){
         Platform.exit();
         System.exit(0);
-    }
-
-    private void buttonBacklight(Button button){
-        clearButtonsEffects(modeSelections);
-        button.setEffect(new Bloom(0.9f));
-    }
-
-    private void clearButtonsEffects(List<Button> buttons){
-        for (Button button : buttons)
-            button.setEffect(null);
-    }
-
-    private <T> void vboxToList(VBox box, List<T> list) {
-        for (Node element : box.getChildren().stream().toList())
-            list.add((T)element);
-    }
-
-    public void cleaningFiles(ActionEvent actionEvent) {
-        pageController.cleaningFiles();
-        setPage(actionEvent);
-    }
-
-    public void clearingMemory(ActionEvent actionEvent) {
-        pageController.clearingMemory();
-        setPage(actionEvent);
-    }
-
-    public void computerInformation(ActionEvent actionEvent) {
-        pageController.computerInformation();
-        setPage(actionEvent);
-    }
-
-    public void computerSettings(ActionEvent actionEvent) {
-        pageController.computerSettings();
-        setPage(actionEvent);
-    }
-
-    public void programSettings(ActionEvent actionEvent) {
-        pageController.programSettings();
-        setPage(actionEvent);
     }
 }
