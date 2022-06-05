@@ -29,7 +29,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#clearingMemory" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Clearing Memory" textFill="WHITE" >
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#clearingMemory" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Clearing Memory" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -43,7 +43,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="191.0" mnemonicParsing="false" onAction="#computerInformation" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Computer Settings" textFill="WHITE" >
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="191.0" mnemonicParsing="false" onAction="#computerInformation" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Computer Settings" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -57,7 +57,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#computerSettings" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Program Settings" textFill="WHITE" >
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#computerSettings" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Program Settings" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -71,7 +71,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#programSettings" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE" >
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#programSettings" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
@@ -115,6 +115,6 @@
             </Button>
          </children>
       </AnchorPane>
-      <BorderPane fx:id="workspace" layoutX="247.0" layoutY="32.0" prefHeight="538.0" prefWidth="578.0" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="32.0" />
+      <BorderPane fx:id="workspace" layoutX="247.0" layoutY="27.0" prefHeight="538.0" prefWidth="578.0" />
    </children>
 </AnchorPane>

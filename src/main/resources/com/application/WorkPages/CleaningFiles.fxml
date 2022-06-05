@@ -4,7 +4,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="392.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="com.application.pages.CleaningFiles" prefHeight="392.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox alignment="CENTER" prefHeight="392.0" prefWidth="423.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -17,7 +17,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="402.0" prefWidth="433.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="263.0" style="-fx-background-color: transparent;" textFill="WHITE" translateY="55.0">
+            <Button onAction="#workButton" mnemonicParsing="false" prefHeight="69.0" prefWidth="263.0" style="-fx-background-color: transparent;" textFill="WHITE" translateY="55.0">
                <graphic>
                   <ImageView fitHeight="54.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
                      <image>
