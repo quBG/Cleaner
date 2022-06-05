@@ -1,20 +1,19 @@
 package com.application;
 
-import com.application.Tools.ButtonTools;
-import com.application.Tools.Converter;
+import com.application.tools.ConverterTools;
 import com.application.pages.PageController;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.effect.Bloom;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 
+import java.net.URL;
 import java.util.*;
 
-public class MainApplicationController {
+public class MainApplicationController implements Initializable {
     @FXML
     private VBox containerButtons;
     @FXML
@@ -22,30 +21,30 @@ public class MainApplicationController {
     private PageController pageController = new PageController();
     private List<Button> modeSelections = new ArrayList<>();
 
-    @FXML
-    private void initialize() {
-        Converter.vboxToList(containerButtons, modeSelections);
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        ConverterTools.vboxToList(containerButtons, modeSelections);
         pageController.setWorkspace(workspace, modeSelections);
     }
 
     public void cleaningFiles(ActionEvent event) {
-        pageController.loadPage(getClass().getResource("/com/application/WorkPages/CleaningFiles.fxml"), event);
+        pageController.loadPage("/com/application/WorkPages/CleaningFiles.fxml", event);
     }
 
     public void clearingMemory(ActionEvent event) {
-        pageController.loadPage(getClass().getResource("/com/application/WorkPages/ClearingMemory.fxml"), event);
+        pageController.loadPage("/com/application/WorkPages/ClearingMemory.fxml", event);
     }
 
     public void computerInformation(ActionEvent event) {
-        pageController.loadPage(getClass().getResource("/com/application/WorkPages/ComputerInformation.fxml"), event);
+        pageController.loadPage("/com/application/WorkPages/ComputerInformation.fxml", event);
     }
 
     public void computerSettings(ActionEvent event) {
-        pageController.loadPage(getClass().getResource("/com/application/WorkPages/ComputerSettings.fxml"), event);
+        pageController.loadPage("/com/application/WorkPages/ComputerSettings.fxml", event);
     }
 
     public void programSettings(ActionEvent event) {
-        pageController.loadPage(getClass().getResource("/com/application/WorkPages/ProgramSettings.fxml"), event);
+        pageController.loadPage("/com/application/WorkPages/ProgramSettings.fxml", event);
     }
 
     public void closeProgram(){

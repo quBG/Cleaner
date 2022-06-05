@@ -1,4 +1,4 @@
-package com.application.Tools;
+package com.application.tools;
 
 import javafx.scene.control.Button;
 import javafx.scene.effect.Bloom;
