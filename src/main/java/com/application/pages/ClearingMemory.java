@@ -1,9 +1,10 @@
 package com.application.pages;
 
+import javafx.event.ActionEvent;
+
 public class ClearingMemory extends Page{
 
-    @Override
-    public void use() {
+    public void clear(ActionEvent event) {
 
     }
 }

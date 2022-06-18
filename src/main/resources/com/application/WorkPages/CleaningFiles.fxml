@@ -17,7 +17,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="402.0" prefWidth="433.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Button onAction="#workButton" mnemonicParsing="false" prefHeight="69.0" prefWidth="263.0" style="-fx-background-color: transparent;" textFill="WHITE" translateY="55.0">
+            <Button onAction="#clear" mnemonicParsing="false" prefHeight="69.0" prefWidth="263.0" style="-fx-background-color: transparent;" textFill="WHITE" translateY="55.0">
                <graphic>
                   <ImageView fitHeight="54.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
                      <image>
