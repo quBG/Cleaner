@@ -1,4 +1,5 @@
 module com.cleaner.main.cleaner {
+    requires javafx.graphics;
     requires javafx.controls;
     requires javafx.fxml;
 
