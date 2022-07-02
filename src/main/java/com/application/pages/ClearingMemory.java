@@ -9,7 +9,6 @@ import java.nio.file.Path;
 public class ClearingMemory{
     public void clear(ActionEvent event) {
         useCleaningService();
-        System.out.println("Complete Cleaning Memory");
     }
 
     private void useCleaningService() {
