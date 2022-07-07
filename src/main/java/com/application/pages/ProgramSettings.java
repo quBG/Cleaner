@@ -1,5 +1,5 @@
 package com.application.pages;
 
-public class ProgramSettings extends Page {
+public class ProgramSettings {
 
 }
