@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainApplicationController">
+   <children>
+      <AnchorPane prefHeight="565.0" prefWidth="237.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="containerButtons" layoutX="-6.0" prefHeight="555.0" prefWidth="256.0" spacing="19.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="0.0">
+               <padding>
+                  <Insets left="7.0" top="120.0" />
+               </padding>
+               <children>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cleaningFiles" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/FileCleaner.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="118.0" mnemonicParsing="false" onAction="#clearingMemory" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Clearing Memory" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/Busting.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="191.0" mnemonicParsing="false" onAction="#computerInformation" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Computer Settings" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/SettingsPC.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#computerSettings" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Program Settings" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/Settings.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#programSettings" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
+                     <font>
+                        <Font name="Verdana" size="17.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
+                           <image>
+                              <Image url="@../pictures/Icons/InformationAboutPC.png" />
+                           </image></ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets left="13.0" />
+                     </VBox.margin>
+                  </Button>
+               </children></VBox>
+         </children></AnchorPane>
+      <AnchorPane prefHeight="83.0" prefWidth="250.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="107.0" prefWidth="250.0">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                     <image>
+                        <Image url="@../pictures/Icons/Logo.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="-4.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+      <AnchorPane layoutX="250.0" layoutY="-4.0" prefHeight="12.0" prefWidth="578.0" translateX="-3.0" translateY="3.0">
+         <children>
+            <Button layoutX="3.0" layoutY="2.0" mnemonicParsing="false" onAction="#closeProgram" prefHeight="28.0" prefWidth="35.0" style="-fx-background-color: transparent;" textAlignment="CENTER" translateX="534.0" translateY="1.0">
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="2.0">
+                     <image>
+                        <Image url="@../pictures/Icons/Exit.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <BorderPane fx:id="workspace" layoutX="247.0" layoutY="27.0" prefHeight="538.0" prefWidth="578.0" />
+      <Pane layoutX="613.0" layoutY="499.0" prefHeight="45.0" prefWidth="199.0" style="-fx-background-color: #225bab; -fx-background-radius: 6;">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="148.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pictures/Icons/CheckMark.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutY="-4.0" prefHeight="54.0" prefWidth="150.0" text="Complete" textAlignment="CENTER" textFill="#e8e8e8">
+               <font>
+                  <Font name="Verdana Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+         </Pane>
+   </children>
+</AnchorPane>

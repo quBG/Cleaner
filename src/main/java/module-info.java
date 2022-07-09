@@ -4,7 +4,7 @@ module com.cleaner.main.cleaner {
     requires java.logging;
     requires java.desktop;
 
-    opens com.application to javafx.fxml;
-    exports com.application.pages;
-    exports com.application;
+    opens application to javafx.fxml;
+    exports application.pages;
+    exports application;
 }
