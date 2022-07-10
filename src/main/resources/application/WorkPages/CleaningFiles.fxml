@@ -4,9 +4,9 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:controller="application.pages.CleaningFiles" prefHeight="392.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="392.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pages.CleaningFiles">
    <children>
-      <HBox alignment="CENTER" prefHeight="392.0" prefWidth="423.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="CENTER" prefHeight="402.0" prefWidth="433.0">
          <children>
             <ImageView fitHeight="190.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true" translateY="-92.0">
                <image>
@@ -15,9 +15,9 @@
             </ImageView>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="402.0" prefWidth="433.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="CENTER" prefHeight="402.0" prefWidth="433.0">
          <children>
-            <Button onAction="#clear" mnemonicParsing="false" prefHeight="69.0" prefWidth="263.0" style="-fx-background-color: transparent;" textFill="WHITE" translateY="55.0">
+            <Button mnemonicParsing="false" onAction="#clear" prefHeight="69.0" prefWidth="263.0" style="-fx-background-color: transparent;" textFill="WHITE" translateY="55.0">
                <graphic>
                   <ImageView fitHeight="54.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
                      <image>

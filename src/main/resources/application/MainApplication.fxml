@@ -2,7 +2,6 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -117,19 +116,5 @@
          </children>
       </AnchorPane>
       <BorderPane fx:id="workspace" layoutX="247.0" layoutY="27.0" prefHeight="538.0" prefWidth="578.0" />
-      <Pane layoutX="613.0" layoutY="499.0" prefHeight="45.0" prefWidth="199.0" style="-fx-background-color: #225bab; -fx-background-radius: 6;">
-         <children>
-            <ImageView fitHeight="39.0" fitWidth="37.0" layoutX="148.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../pictures/Icons/CheckMark.png" />
-               </image>
-            </ImageView>
-            <Label alignment="CENTER" layoutY="-4.0" prefHeight="54.0" prefWidth="150.0" text="Complete" textAlignment="CENTER" textFill="#e8e8e8">
-               <font>
-                  <Font name="Verdana Bold" size="22.0" />
-               </font>
-            </Label>
-         </children>
-         </Pane>
    </children>
 </AnchorPane>
