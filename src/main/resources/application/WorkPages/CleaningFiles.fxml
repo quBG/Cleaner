@@ -6,7 +6,7 @@
 
 <AnchorPane prefHeight="392.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pages.CleaningFiles">
    <children>
-      <HBox alignment="CENTER" prefHeight="402.0" prefWidth="433.0">
+      <HBox fx:id="background" alignment="CENTER" prefHeight="402.0" prefWidth="433.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <ImageView fitHeight="190.0" fitWidth="193.0" pickOnBounds="true" preserveRatio="true" translateY="-92.0">
                <image>
@@ -15,7 +15,7 @@
             </ImageView>
          </children>
       </HBox>
-      <HBox alignment="CENTER" prefHeight="402.0" prefWidth="433.0">
+      <HBox fx:id="cleaningButton" alignment="CENTER" prefHeight="402.0" prefWidth="433.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <Button mnemonicParsing="false" onAction="#clear" prefHeight="69.0" prefWidth="263.0" style="-fx-background-color: transparent;" textFill="WHITE" translateY="55.0">
                <graphic>
@@ -26,6 +26,15 @@
                   </ImageView>
                </graphic>
             </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="cleaningCompletionBackground" alignment="CENTER" prefHeight="412.0" prefWidth="443.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="232.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-85.0">
+               <image>
+                  <Image url="@../../pictures/Icons/CleaningComplete.png" />
+               </image>
+            </ImageView>
          </children>
       </HBox>
    </children>
