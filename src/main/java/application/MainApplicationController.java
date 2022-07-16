@@ -1,6 +1,7 @@
 package application;
 
 import application.pages.PageController;
+import application.tools.ButtonTools;
 import application.tools.ConverterTools;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
@@ -18,36 +19,49 @@ public class MainApplicationController implements Initializable {
     private VBox containerButtons;
     @FXML
     private BorderPane workspace;
-    private PageController pageController = new PageController();
+    public static BorderPane mainWorkspace;
     private List<Button> modeSelections = new ArrayList<>();
+    private PageController pageController = new PageController();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        mainWorkspace = workspace;
+        pageController.setWorkspace(workspace);
         ConverterTools.vboxToList(containerButtons, modeSelections);
-        pageController.setWorkspace(workspace, modeSelections);
     }
 
-    public void cleaningFiles(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/CleaningFiles.fxml", event);
+    public static BorderPane getWorkspace(){
+        return mainWorkspace;
     }
 
-    public void clearingMemory(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/ClearingMemory.fxml", event);
+    @FXML
+    private void cleaningFiles(ActionEvent event) {
+        pageController.loadPage("/application/WorkPages/CleaningFiles.fxml");
     }
 
-    public void computerInformation(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/ComputerInformation.fxml", event);
+    @FXML
+    private void clearingMemory(ActionEvent event) {
+        pageController.loadPage("/application/WorkPages/ClearingMemory.fxml");
     }
 
-    public void computerSettings(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/ComputerSettings.fxml", event);
+    @FXML
+    private void computerInformation(ActionEvent event) {
+        pageController.loadPage("/application/WorkPages/ComputerInformation.fxml");
     }
 
-    public void programSettings(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/ProgramSettings.fxml", event);
+    @FXML
+    private void computerSettings(ActionEvent event) {
+        pageController.loadPage("/application/WorkPages/ComputerSettings.fxml");
     }
 
-    public void closeProgram(){
+    @FXML
+    private void programSettings(ActionEvent event) {
+        pageController.loadPage("/application/WorkPages/ProgramSettings.fxml");
+        ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
+    }
+
+    @FXML
+    private void closeProgram(){
         Platform.exit();
         System.exit(0);
     }

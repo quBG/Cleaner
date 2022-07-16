@@ -1,19 +1,16 @@
 package application.pages;
 
+import application.MainApplicationController;
 import application.tools.ExeTools;
 import javafx.event.ActionEvent;
-import javafx.scene.layout.HBox;
 
 public class CleaningFiles {
-    public HBox cleaningButton;
-    public HBox background;
-    public HBox cleaningCompletionBackground;
+    private PageController pageController = new PageController();
 
     public void clear(ActionEvent event) {
-        cleaningButton.setVisible(false);
-        background.setVisible(false);
+        pageController.setWorkspace(MainApplicationController.getWorkspace());
+        pageController.loadPage("/application/WorkPages/SubPages/AfterCleaning.fxml");
         ExeTools.startExeService("DiskSpaceCleanup.exe",
-                "/application/exeServices/DiskSpaceCleanup.exe");
-        cleaningCompletionBackground.setVisible(true);
+                "/application/ExeServices/DiskSpaceCleanup.exe");
     }
 }

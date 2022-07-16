@@ -13,7 +13,7 @@ public class ClearingMemory{
         cleaningButton.setVisible(false);
         background.setVisible(false);
         ExeTools.startExeService("SetProcessWorkingSetSize.exe",
-            "/application/exeServices/SetProcessWorkingSetSize.exe");
+                "/application/ExeServices/SetProcessWorkingSetSize.exe");
         cleaningCompletionBackground.setVisible(true);
     }
 }
