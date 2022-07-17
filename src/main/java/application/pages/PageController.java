@@ -16,9 +16,9 @@ public class PageController {
     }
 
     public void loadPage(String path) {
-        if (workspace == null){
+        if (workspace == null)
             throw new NullPointerException("workspace is not defined (PageController.java)");
-        }
+
         try {
             AnchorPane loader = FXMLLoader.load(getClass().getResource(path));
             workspace.setCenter(loader);

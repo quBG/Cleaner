@@ -1,19 +1,26 @@
 package application.pages;
 
+import application.MainApplicationController;
 import application.tools.ExeTools;
 import javafx.event.ActionEvent;
-import javafx.scene.layout.HBox;
+import javafx.fxml.FXML;
 
 public class ClearingMemory{
-    public HBox cleaningButton;
-    public HBox background;
-    public HBox cleaningCompletionBackground;
+    private PageController pageController = new PageController();
 
+    public ClearingMemory(){
+        pageController.setWorkspace(MainApplicationController.getWorkspace());
+    }
+
+    @FXML
     public void clear(ActionEvent event) {
-        cleaningButton.setVisible(false);
-        background.setVisible(false);
         ExeTools.startExeService("SetProcessWorkingSetSize.exe",
                 "/application/ExeServices/SetProcessWorkingSetSize.exe");
-        cleaningCompletionBackground.setVisible(true);
+        pageController.loadPage("/application/WorkPages/SubPages/AfterClearingMemory.fxml");
+    }
+
+    @FXML
+    public void backButton(){
+        pageController.loadPage("/application/WorkPages/ClearingMemory.fxml");
     }
 }

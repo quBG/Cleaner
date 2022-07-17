@@ -28,14 +28,5 @@
                 </Button>
             </children>
         </HBox>
-      <HBox fx:id="cleaningCompletionBackground" alignment="CENTER" prefHeight="402.0" prefWidth="433.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <children>
-            <ImageView fitHeight="232.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-85.0">
-               <image>
-                  <Image url="@../../pictures/Icons/CleaningComplete.png" />
-               </image>
-            </ImageView>
-         </children>
-      </HBox>
     </children>
 </AnchorPane>

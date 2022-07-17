@@ -37,21 +37,25 @@ public class MainApplicationController implements Initializable {
     @FXML
     private void cleaningFiles(ActionEvent event) {
         pageController.loadPage("/application/WorkPages/CleaningFiles.fxml");
+        ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
     @FXML
     private void clearingMemory(ActionEvent event) {
         pageController.loadPage("/application/WorkPages/ClearingMemory.fxml");
+        ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
     @FXML
     private void computerInformation(ActionEvent event) {
         pageController.loadPage("/application/WorkPages/ComputerInformation.fxml");
+        ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
     @FXML
     private void computerSettings(ActionEvent event) {
         pageController.loadPage("/application/WorkPages/ComputerSettings.fxml");
+        ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
     @FXML
