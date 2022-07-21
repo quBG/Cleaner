@@ -6,11 +6,46 @@
 
 <AnchorPane prefHeight="288.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pages.ComputerInformation">
    <children>
-      <Label alignment="CENTER" layoutX="97.0" layoutY="14.0" prefHeight="91.0" prefWidth="362.0" text="Optimization" textAlignment="CENTER">
+      <Label alignment="CENTER" layoutX="97.0" layoutY="8.0" prefHeight="72.0" prefWidth="362.0" text="Optimization" textAlignment="CENTER">
          <font>
-            <Font name="System Bold" size="32.0" />
+            <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <VBox layoutY="88.0" prefHeight="314.0" prefWidth="465.0" />
+      <VBox layoutY="88.0" prefHeight="314.0" prefWidth="286.0">
+         <children>
+            <Pane prefHeight="98.0" prefWidth="286.0">
+               <children>
+                  <CheckBox layoutX="35.0" layoutY="20.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="216.0" text="Disable UAC">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></CheckBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="98.0" prefWidth="286.0">
+               <children>
+                  <CheckBox layoutX="35.0" layoutY="20.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="216.0" text="Disable UAC">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></CheckBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="98.0" prefWidth="286.0">
+               <children>
+                  <CheckBox layoutX="35.0" layoutY="20.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="216.0" text="Disable UAC">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></CheckBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="98.0" prefWidth="286.0">
+               <children>
+                  <CheckBox layoutX="35.0" layoutY="20.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="216.0" text="Disable UAC">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font></CheckBox>
+               </children>
+            </Pane>
+
+         </children></VBox>
    </children>
 </AnchorPane>
