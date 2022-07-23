@@ -1,15 +1,19 @@
 package application;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import javax.imageio.ImageIO;
 import java.io.IOException;
+import java.net.URL;
+import java.util.Date;
+import java.util.TimerTask;
 
 public class Main extends Application {
-    private double OffsetX, OffsetY;
 
     public static void main(String[] args) {
         launch();
@@ -19,7 +23,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainApplication.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        WindowDragging(scene, stage);
+        Window window = new Window(stage, scene);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setHeight(565);
         stage.setWidth(825);
@@ -27,16 +31,5 @@ public class Main extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-    }
-
-    private void WindowDragging(Scene scene, Stage stage){
-        scene.setOnMousePressed(event -> {
-            OffsetX = stage.getX() - event.getScreenX();
-            OffsetY = stage.getY() - event.getScreenY();
-        });
-        scene.setOnMouseDragged(event -> {
-            stage.setX(event.getScreenX() + OffsetX);
-            stage.setY(event.getScreenY() + OffsetY);
-        });
     }
 }
