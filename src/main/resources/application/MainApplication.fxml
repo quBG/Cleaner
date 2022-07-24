@@ -57,7 +57,7 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#programSettings" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#computerInformation" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>

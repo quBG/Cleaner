@@ -9,7 +9,7 @@ public class ClearingMemory{
     private PageController pageController = new PageController();
 
     public ClearingMemory(){
-        pageController.setWorkspace(MainApplicationController.getWorkspace());
+        pageController.setWorkspace(MainApplicationController.mainWorkspace);
     }
 
     @FXML

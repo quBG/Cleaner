@@ -1,20 +1,14 @@
 package application;
 
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-import javax.imageio.ImageIO;
 import java.io.IOException;
-import java.net.URL;
-import java.util.Date;
-import java.util.TimerTask;
 
 public class Main extends Application {
-
     public static void main(String[] args) {
         launch();
     }

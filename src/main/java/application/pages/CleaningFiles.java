@@ -8,7 +8,7 @@ public class CleaningFiles {
     private PageController pageController = new PageController();
 
     public CleaningFiles(){
-        pageController.setWorkspace(MainApplicationController.getWorkspace());
+        pageController.setWorkspace(MainApplicationController.mainWorkspace);
     }
 
     public void clear(ActionEvent event) {

@@ -24,18 +24,7 @@ public class Window {
         WindowDragging(scene, stage);
     }
 
-    private void WindowDragging(Scene scene, Stage stage){
-        scene.setOnMousePressed(event -> {
-            OffsetX = stage.getX() - event.getScreenX();
-            OffsetY = stage.getY() - event.getScreenY();
-        });
-        scene.setOnMouseDragged(event -> {
-            stage.setX(event.getScreenX() + OffsetX);
-            stage.setY(event.getScreenY() + OffsetY);
-        });
-    }
-
-    private void hideWindowsToTray(){
+    public void hideWindowsToTray(){
         try {
             java.awt.Toolkit.getDefaultToolkit();
 
@@ -75,18 +64,18 @@ public class Window {
             trayIcon.setPopupMenu(popup);
 
             notificationTimer.schedule(
-                    new TimerTask() {
-                        @Override
-                        public void run() {
-                            javax.swing.SwingUtilities.invokeLater(() ->
-                                    trayIcon.displayMessage(
-                                            "hello",
-                                            "The time is now " + timeFormat.format(new Date()),
-                                            java.awt.TrayIcon.MessageType.INFO
-                                    )
-                            );
-                        }
-                    },
+                new TimerTask() {
+                    @Override
+                    public void run() {
+                        javax.swing.SwingUtilities.invokeLater(() ->
+                                trayIcon.displayMessage(
+                                        "hello",
+                                        "The time is now " + timeFormat.format(new Date()),
+                                        java.awt.TrayIcon.MessageType.INFO
+                                )
+                        );
+                    }
+                },
                     5_000,
                     60_000
             );
@@ -95,6 +84,17 @@ public class Window {
             System.out.println("Unable to init system tray");
             e.printStackTrace();
         }
+    }
+
+    private void WindowDragging(Scene scene, Stage stage){
+        scene.setOnMousePressed(event -> {
+            OffsetX = stage.getX() - event.getScreenX();
+            OffsetY = stage.getY() - event.getScreenY();
+        });
+        scene.setOnMouseDragged(event -> {
+            stage.setX(event.getScreenX() + OffsetX);
+            stage.setY(event.getScreenY() + OffsetY);
+        });
     }
 
     private void showStage() {
