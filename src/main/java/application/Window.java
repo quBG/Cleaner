@@ -7,21 +7,29 @@ import javafx.stage.Stage;
 import javax.imageio.ImageIO;
 import java.io.IOException;
 import java.net.URL;
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class Window {
-    private final String iconImageLocation = "https://upload.wikimedia.org/wikipedia/ru/5/51/CCleaner_logo.png";
-    private double OffsetX, OffsetY;
-    private DateFormat timeFormat = SimpleDateFormat.getTimeInstance();
-    private Timer notificationTimer = new Timer();
+    private static Window window = null;
+    private static Timer notificationTimer = new Timer();
+    private Scene scene;
     private Stage stage;
+    private double OffsetX, OffsetY;
 
-    public Window(Stage stage, Scene scene){
-        WindowDragging(scene, stage);
+    private Window(Stage stage, Scene scene){
+        this.stage = stage;
+        this.scene = scene;
+        window.WindowDragging();
+    }
+
+    public static synchronized Window getInstance(Stage stage, Scene scene) {
+        if (window == null) {
+            window = new Window(stage, scene);
+        }
+        return window;
     }
 
     public void hideWindowsToTray(){
@@ -35,16 +43,16 @@ public class Window {
 
             java.awt.SystemTray tray = java.awt.SystemTray.getSystemTray();
             URL imageLoc = new URL(
-                    iconImageLocation
+                    "https://upload.wikimedia.org/wikipedia/ru/5/51/CCleaner_logo.png"
             );
 
             java.awt.Image image = ImageIO.read(imageLoc);
             java.awt.TrayIcon trayIcon = new java.awt.TrayIcon(image);
 
-            trayIcon.addActionListener(event -> Platform.runLater(this::showStage));
+            trayIcon.addActionListener(event -> Platform.runLater(showStage()));
 
             java.awt.MenuItem openItem = new java.awt.MenuItem("hello, world");
-            openItem.addActionListener(event -> Platform.runLater(this::showStage));
+            openItem.addActionListener(event -> Platform.runLater(showStage()));
 
             java.awt.Font defaultFont = java.awt.Font.decode(null);
             java.awt.Font boldFont = defaultFont.deriveFont(java.awt.Font.BOLD);
@@ -70,7 +78,7 @@ public class Window {
                         javax.swing.SwingUtilities.invokeLater(() ->
                                 trayIcon.displayMessage(
                                         "hello",
-                                        "The time is now " + timeFormat.format(new Date()),
+                                        "The time is now " + SimpleDateFormat.getTimeInstance().format(new Date()),
                                         java.awt.TrayIcon.MessageType.INFO
                                 )
                         );
@@ -86,7 +94,7 @@ public class Window {
         }
     }
 
-    private void WindowDragging(Scene scene, Stage stage){
+    private void WindowDragging(){
         scene.setOnMousePressed(event -> {
             OffsetX = stage.getX() - event.getScreenX();
             OffsetY = stage.getY() - event.getScreenY();
@@ -97,10 +105,11 @@ public class Window {
         });
     }
 
-    private void showStage() {
+    private Runnable showStage() {
         if (stage != null) {
             stage.show();
             stage.toFront();
         }
+        return null;
     }
 }

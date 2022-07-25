@@ -1,6 +1,6 @@
 package application.pages;
 
-import application.MainApplicationController;
+import application.MainPageController;
 import application.tools.ExeTools;
 import javafx.event.ActionEvent;
 
@@ -8,7 +8,7 @@ public class CleaningFiles {
     private PageController pageController = new PageController();
 
     public CleaningFiles(){
-        pageController.setWorkspace(MainApplicationController.mainWorkspace);
+        pageController.setWorkspace(MainPageController.mainWorkspace);
     }
 
     public void clear(ActionEvent event) {

@@ -17,7 +17,8 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainApplication.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        Window window = new Window(stage, scene);
+        Window window = Window.getInstance(stage, scene);
+        window.hideWindowsToTray(stage);
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setHeight(565);
         stage.setWidth(825);

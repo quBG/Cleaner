@@ -13,7 +13,7 @@ import javafx.scene.layout.VBox;
 import java.net.URL;
 import java.util.*;
 
-public class MainApplicationController implements Initializable {
+public class MainPageController implements Initializable {
     public static BorderPane mainWorkspace;
     @FXML
     private VBox containerButtons;
@@ -53,6 +53,7 @@ public class MainApplicationController implements Initializable {
         ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
-    public void closeProgram(){
+    public void closeProgram() {
+
     }
 }

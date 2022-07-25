@@ -1,6 +1,6 @@
 package application.pages;
 
-import application.MainApplicationController;
+import application.MainPageController;
 import application.tools.ExeTools;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,7 +9,7 @@ public class ClearingMemory{
     private PageController pageController = new PageController();
 
     public ClearingMemory(){
-        pageController.setWorkspace(MainApplicationController.mainWorkspace);
+        pageController.setWorkspace(MainPageController.mainWorkspace);
     }
 
     @FXML
