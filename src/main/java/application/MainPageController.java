@@ -1,5 +1,6 @@
 package application;
 
+import application.exit.Observer;
 import application.pages.PageController;
 import application.tools.ButtonTools;
 import application.tools.ConverterTools;
@@ -19,6 +20,7 @@ public class MainPageController implements Initializable {
     private VBox containerButtons;
     @FXML
     private BorderPane workspace;
+    private List<Observer> observers = new ArrayList<>();
     private List<Button> modeSelections = new ArrayList<>();
     private PageController pageController = new PageController();
 
@@ -27,6 +29,15 @@ public class MainPageController implements Initializable {
         mainWorkspace = workspace;
         pageController.setWorkspace(workspace);
         ConverterTools.vboxToList(containerButtons, modeSelections);
+        addObserver((Observer) Window.getInstance(null,null));
+    }
+
+    public void addObserver(Observer observer) {
+        this.observers.add(observer);
+    }
+
+    public void removeObserver(Observer observer) {
+        this.observers.remove(observer);
     }
 
     @FXML
@@ -53,7 +64,11 @@ public class MainPageController implements Initializable {
         ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
-    public void closeProgram() {
-
+    @FXML
+    private void closeProgram() {
+        for (Observer observer : observers){
+            observer.update();
+        }
+        System.out.println("TOOOOO EXXXXXXIIIIIITTTTTTT");
     }
 }

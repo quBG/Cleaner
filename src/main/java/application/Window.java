@@ -1,5 +1,6 @@
 package application;
 
+import application.exit.Observer;
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -12,7 +13,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class Window {
+public class Window extends Observer {
     private static Window window = null;
     private static Timer notificationTimer = new Timer();
     private Scene scene;
@@ -22,7 +23,7 @@ public class Window {
     private Window(Stage stage, Scene scene){
         this.stage = stage;
         this.scene = scene;
-        window.WindowDragging();
+        window.windowDragging();
     }
 
     public static synchronized Window getInstance(Stage stage, Scene scene) {
@@ -94,7 +95,7 @@ public class Window {
         }
     }
 
-    private void WindowDragging(){
+    private void windowDragging(){
         scene.setOnMousePressed(event -> {
             OffsetX = stage.getX() - event.getScreenX();
             OffsetY = stage.getY() - event.getScreenY();
@@ -111,5 +112,11 @@ public class Window {
             stage.toFront();
         }
         return null;
+    }
+
+    @Override
+    public void update() {
+//        hideWindowsToTray();
+        System.out.println("UPDATE FROM WINDOW");
     }
 }
