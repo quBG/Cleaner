@@ -18,7 +18,7 @@ public class Main extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainApplication.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Window window = Window.getInstance(stage, scene);
-        window.hideWindowsToTray(stage);
+        window.hideWindowsToTray();
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setHeight(565);
         stage.setWidth(825);
