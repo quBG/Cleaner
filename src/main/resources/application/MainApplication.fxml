@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageController">
+<AnchorPane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageController">
    <children>
       <AnchorPane prefHeight="565.0" prefWidth="237.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <VBox fx:id="containerButtons" layoutX="-6.0" prefHeight="555.0" prefWidth="256.0" spacing="19.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="0.0">
+            <VBox fx:id="containerButtons" layoutX="-6.0" prefHeight="555.0" prefWidth="256.0" spacing="20.0" style="-fx-background-color: #154994;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-6.0" AnchorPane.topAnchor="0.0">
                <padding>
-                  <Insets left="7.0" top="120.0" />
+                  <Insets left="7.0" top="130.0" />
                </padding>
                <children>
                   <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#cleaningFiles" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Cleaning Files" textFill="WHITE">
@@ -101,6 +101,6 @@
             </Button>
          </children>
       </AnchorPane>
-      <BorderPane fx:id="workspace" layoutX="247.0" layoutY="27.0" prefHeight="538.0" prefWidth="578.0" />
+      <BorderPane fx:id="workspace" layoutX="247.0" layoutY="27.0" prefHeight="525.0" prefWidth="578.0" />
    </children>
 </AnchorPane>

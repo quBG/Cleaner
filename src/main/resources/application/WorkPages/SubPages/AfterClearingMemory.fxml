@@ -8,14 +8,14 @@
    <children>
       <Pane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <ImageView fitHeight="209.0" fitWidth="329.0" layoutX="125.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="209.0" fitWidth="329.0" layoutX="125.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../pictures/Icons/CleaningComplete.png" />
                </image>
             </ImageView>
          </children>
       </Pane>
-      <Button layoutX="2.0" layoutY="477.0" mnemonicParsing="false" onAction="#backButton" prefHeight="40.0" prefWidth="49.0" style="-fx-background-color: transparent;">
+      <Button layoutX="2.0" layoutY="440.0" mnemonicParsing="false" onAction="#backButton" prefHeight="40.0" prefWidth="49.0" style="-fx-background-color: transparent;">
          <graphic>
             <ImageView fitHeight="58.0" fitWidth="54.0" opacity="0.15" pickOnBounds="true" preserveRatio="true">
                <image>

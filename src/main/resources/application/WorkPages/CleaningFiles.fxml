@@ -19,7 +19,7 @@
          <children>
             <Button mnemonicParsing="false" onAction="#clear" prefHeight="69.0" prefWidth="263.0" style="-fx-background-color: transparent;" textFill="WHITE" translateY="55.0">
                <graphic>
-                  <ImageView fitHeight="54.0" fitWidth="276.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="45.0" fitWidth="227.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../pictures/AnotherPictures/Start searching.png" />
                      </image>

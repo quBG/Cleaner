@@ -18,7 +18,8 @@ public class MainPageController implements Initializable {
     @FXML
     private VBox containerButtons;
     @FXML
-    private static BorderPane workspace;
+    private BorderPane workspace;
+    private static BorderPane mainWorkspace;
     private List<Observer> observers = new ArrayList<>();
     private List<Button> modeSelections = new ArrayList<>();
     private PageController pageController = new PageController();
@@ -26,14 +27,11 @@ public class MainPageController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ConverterTools.vboxToList(containerButtons, modeSelections);
+        mainWorkspace = workspace;
     }
 
-    /**
-     * Need to use this to bypass creating new
-     * instances of a class or creating a singleton
-     */
     public static BorderPane getWorkspace(){
-        return workspace;
+        return mainWorkspace;
     }
 
     /**

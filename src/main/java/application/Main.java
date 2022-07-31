@@ -22,7 +22,7 @@ public class Main extends Application {
         Window window = Window.getInstance(stage, scene);
         window.dragging();
         stage.initStyle(StageStyle.UNDECORATED);
-        stage.setHeight(565);
+        stage.setHeight(530);
         stage.setWidth(825);
         stage.setTitle("ACCleaner");
         stage.setScene(scene);
