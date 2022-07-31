@@ -2,25 +2,22 @@ package application.pages;
 
 import application.MainPageController;
 import application.tools.ExeTools;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 public class ClearingMemory{
     private PageController pageController = new PageController();
 
-    public ClearingMemory(){
-        pageController.setWorkspace(MainPageController.mainWorkspace);
-    }
-
     @FXML
-    public void clear(ActionEvent event) {
+    public void clear() {
         ExeTools.startExeService("SetProcessWorkingSetSize.exe",
                 "/application/ExeServices/SetProcessWorkingSetSize.exe");
-        pageController.loadPage("/application/WorkPages/SubPages/AfterClearingMemory.fxml");
+        pageController.loadPage(MainPageController.getWorkspace(),
+                "/application/WorkPages/SubPages/AfterClearingMemory.fxml");
     }
 
     @FXML
     public void backButton(){
-        pageController.loadPage("/application/WorkPages/ClearingMemory.fxml");
+        pageController.loadPage(MainPageController.getWorkspace(),
+                "/application/WorkPages/ClearingMemory.fxml");
     }
 }

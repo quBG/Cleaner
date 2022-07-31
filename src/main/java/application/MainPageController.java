@@ -15,60 +15,65 @@ import java.net.URL;
 import java.util.*;
 
 public class MainPageController implements Initializable {
-    public static BorderPane mainWorkspace; /////////
     @FXML
     private VBox containerButtons;
     @FXML
-    private BorderPane workspace; /////////
+    private static BorderPane workspace;
     private List<Observer> observers = new ArrayList<>();
     private List<Button> modeSelections = new ArrayList<>();
     private PageController pageController = new PageController();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        mainWorkspace = workspace;
-        pageController.setWorkspace(workspace);
         ConverterTools.vboxToList(containerButtons, modeSelections);
     }
 
+    /**
+     * Need to use this to bypass creating new
+     * instances of a class or creating a singleton
+     */
+    public static BorderPane getWorkspace(){
+        return workspace;
+    }
+
+    /**
+     * @param observer used when exiting the program
+     */
     public void addObserver(Observer observer) {
         this.observers.add(observer);
     }
 
-    public void removeObserver(Observer observer) {
-        this.observers.remove(observer);
-    }
-
     @FXML
     private void cleaningFiles(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/CleaningFiles.fxml");
+        pageController.loadPage(workspace,"/application/WorkPages/CleaningFiles.fxml");
         ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
     @FXML
     private void clearingMemory(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/ClearingMemory.fxml");
+        pageController.loadPage(workspace,"/application/WorkPages/ClearingMemory.fxml");
         ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
     @FXML
     private void computerInformation(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/ComputerInformation.fxml");
+        pageController.loadPage(workspace,"/application/WorkPages/ComputerInformation.fxml");
         ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
     @FXML
     private void programSettings(ActionEvent event) {
-        pageController.loadPage("/application/WorkPages/ProgramSettings.fxml");
+        pageController.loadPage(workspace,"/application/WorkPages/ProgramSettings.fxml");
         ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
+    /**
+     * Notifies all listeners of the exit
+     */
     @FXML
     private void closeProgram() {
         addObserver(Window.getInstance(null, null));
-
-        for (Observer observer : observers){
+        for (Observer observer : observers)
             observer.update();
-        }
     }
 }
