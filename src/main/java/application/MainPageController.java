@@ -15,11 +15,11 @@ import java.net.URL;
 import java.util.*;
 
 public class MainPageController implements Initializable {
-    public static BorderPane mainWorkspace;
+    public static BorderPane mainWorkspace; /////////
     @FXML
     private VBox containerButtons;
     @FXML
-    private BorderPane workspace;
+    private BorderPane workspace; /////////
     private List<Observer> observers = new ArrayList<>();
     private List<Button> modeSelections = new ArrayList<>();
     private PageController pageController = new PageController();
@@ -29,7 +29,6 @@ public class MainPageController implements Initializable {
         mainWorkspace = workspace;
         pageController.setWorkspace(workspace);
         ConverterTools.vboxToList(containerButtons, modeSelections);
-        addObserver((Observer) Window.getInstance(null,null));
     }
 
     public void addObserver(Observer observer) {
@@ -66,9 +65,12 @@ public class MainPageController implements Initializable {
 
     @FXML
     private void closeProgram() {
+        addObserver(Window.getInstance(null, null));
+
         for (Observer observer : observers){
             observer.update();
         }
+
         System.out.println("TOOOOO EXXXXXXIIIIIITTTTTTT");
     }
 }

@@ -1,6 +1,7 @@
 package application;
 
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -17,8 +18,9 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainApplication.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+        Platform.setImplicitExit(false);
         Window window = Window.getInstance(stage, scene);
-        window.hideWindowsToTray();
+        window.dragging();
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setHeight(565);
         stage.setWidth(825);
