@@ -32,6 +32,10 @@ public class Window extends Observer {
         }
     }
 
+    /**
+     * The method creates a tray instance for the program if it is supported
+     * by the system using AWT.
+    */
     public void addToTray() {
         if (!SystemTray.isSupported()) {
             System.out.println("SystemTray is not supported");
@@ -67,6 +71,10 @@ public class Window extends Observer {
         addedToTray = true;
     }
 
+    /**
+     * The method must be used once when starting the program,
+     * adds the ability to move the window for any part of it
+     */
     public void dragging() {
         scene.setOnMousePressed(event -> {
             OffsetX = stage.getX() - event.getScreenX();
@@ -78,11 +86,18 @@ public class Window extends Observer {
         });
     }
 
+    /**
+     * To show the window in the future, use Platform.setImplicitExit(false);
+     */
     public void hideToTray(){
         addToTray();
         if (stage.isShowing()){
             stage.hide();
         }
+    }
+
+    public boolean getAddedToTray(){
+        return addedToTray;
     }
 
     @Override

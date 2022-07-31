@@ -6,9 +6,8 @@ import javafx.scene.effect.Bloom;
 import java.util.List;
 
 public class ButtonTools {
-
-    public static void clearButtonsEffects(List<javafx.scene.control.Button> buttons){
-        for (javafx.scene.control.Button button : buttons)
+    public static void clearButtonsEffects(List<Button> buttons){
+        for (Button button : buttons)
             button.setEffect(null);
     }
 

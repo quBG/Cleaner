@@ -70,7 +70,5 @@ public class MainPageController implements Initializable {
         for (Observer observer : observers){
             observer.update();
         }
-
-        System.out.println("TOOOOO EXXXXXXIIIIIITTTTTTT");
     }
 }
