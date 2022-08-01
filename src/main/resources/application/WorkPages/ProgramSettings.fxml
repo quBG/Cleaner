@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="application.pages.ProgramSettings"
-            prefHeight="470.0" prefWidth="556.0">
+<AnchorPane prefHeight="470.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pages.ProgramSettings">
+   <children>
+      <VBox prefHeight="470.0" prefWidth="281.0" spacing="20.0">
+         <children>
+            <CheckBox fx:id="hideProgramToTray" mnemonicParsing="false" text="Hide program to tray">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="autoStartProgram" layoutX="40.0" layoutY="60.0" mnemonicParsing="false" text="Launch program at login">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="darkMode" layoutX="40.0" layoutY="99.0" mnemonicParsing="false" text="Dark mode">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </CheckBox>
+         </children>
+         <padding>
+            <Insets left="30.0" top="55.0" />
+         </padding>
+      </VBox>
+   </children>
 </AnchorPane>

@@ -5,6 +5,8 @@ module com.cleaner.main.cleaner {
     requires java.desktop;
 
     opens application to javafx.fxml;
+    opens application.pages to javafx.fxml;
     exports application.pages;
     exports application;
+
 }
