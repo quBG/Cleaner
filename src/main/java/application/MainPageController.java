@@ -2,7 +2,6 @@ package application;
 
 import application.exit.Observer;
 import application.pages.PageController;
-import application.pages.ProgramSettings;
 import application.tools.ButtonTools;
 import application.tools.ConverterTools;
 import javafx.event.ActionEvent;
@@ -61,8 +60,8 @@ public class MainPageController implements Initializable {
     }
 
     @FXML
-    private void programSettings(ActionEvent event) {
-        pageController.loadPage(workspace,"/application/WorkPages/ProgramSettings.fxml");
+    private void aboutProgram(ActionEvent event) {
+        pageController.loadPage(workspace,"/application/WorkPages/AboutProgram.fxml");
         ButtonTools.buttonBacklight((Button) event.getSource(), modeSelections);
     }
 
@@ -72,9 +71,10 @@ public class MainPageController implements Initializable {
     @FXML
     private void closeProgram() {
         addObserver(Window.getInstance(null, null));
-        addObserver(new ProgramSettings());
 
         for (Observer observer : observers)
             observer.update();
     }
+
+
 }

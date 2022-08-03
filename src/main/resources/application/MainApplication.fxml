@@ -43,21 +43,21 @@
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="264.0" mnemonicParsing="false" onAction="#programSettings" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="Program Settings" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#computerInformation" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>
                      <graphic>
                         <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" translateX="-6.0">
                            <image>
-                              <Image url="@../pictures/Icons/Settings.png" />
+                              <Image url="@../pictures/Icons/SettingsPC.png" />
                            </image></ImageView>
                      </graphic>
                      <VBox.margin>
                         <Insets left="13.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#computerInformation" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="PC Information" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" layoutX="25.0" layoutY="337.0" mnemonicParsing="false" onAction="#aboutProgram" prefHeight="47.0" prefWidth="240.0" style="-fx-background-color: #154994;" text="About Program" textFill="WHITE">
                      <font>
                         <Font name="Verdana" size="17.0" />
                      </font>

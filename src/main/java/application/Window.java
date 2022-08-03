@@ -1,8 +1,6 @@
 package application;
 
 import application.exit.Observer;
-import application.pages.ProgramSettings;
-import application.settings.Settings;
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
