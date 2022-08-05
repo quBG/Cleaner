@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="288.0"
-            prefWidth="555.0"
-            xmlns="http://javafx.com/javafx/17.0.2-ea"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="application.pages.ComputerInformation"
-/>
-
+<AnchorPane prefHeight="470.0" prefWidth="556.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pages.ComputerInformation">
+   <children>
+      <VBox fx:id="container" prefHeight="478.0" prefWidth="265.0" spacing="12.0">
+         <padding>
+            <Insets left="30.0" top="35.0" />
+         </padding></VBox>
+   </children>
+</AnchorPane>
