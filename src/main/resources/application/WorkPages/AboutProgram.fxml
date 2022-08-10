@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.pages.AboutProgram">
-
-
+   <children>
+      <Label layoutX="34.0" layoutY="68.0" prefHeight="66.0" prefWidth="443.0" text="Created by _quBG for educational purposes. Not limited by copyright and can be used as you wish, anywhere and any way." wrapText="true">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="102.0" layoutY="44.0" onAction="#sendToSite" text="https://github.com/quBG/Cleaner">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font></Hyperlink>
+      <Label layoutX="34.0" layoutY="47.0" prefHeight="21.0" prefWidth="74.0" text="Source :">
+         <font>
+            <Font name="Verdana" size="15.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
